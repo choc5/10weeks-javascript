@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<script>
+    function week(day)
+    {
+        if(day=='월'||day=="화"||day=='수'||day=='목'||day=='금')
+        document.write(day,"요일은 출근합니다.")
+        else if(day=='토'||day=='일')
+        document.write(day,"요일은 휴일입니다.")
+        else
+        document.write(day,"요일은 어느 나라 말인가요?")
+    }
+</script>
+<body>
+    <h2>월화수목금토일</h2>
+    <hr>    
+    <script>
+        let day = prompt("월화수목금토일 중에 입력하세요","");
+        week(day);
+    </script>
+    
+</body>
+</html>
